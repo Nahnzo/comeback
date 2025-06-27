@@ -3,13 +3,14 @@
 @import './themes/normal.scss';
 @import './variables/global.scss';
 
-.app {
+.app,
+.app_modal {
   font: var(--font-m);
-
-  background: var(--bg-color);
-
   color: var(--primary-color);
+}
 
+.app {
+  background: var(--bg-color);
   min-height: 100vh;
 }
 

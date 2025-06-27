@@ -1,9 +1,9 @@
-.app.dark {
-  --bg-color: rgb(3, 3, 151);
-  --inverted-bg-color: rgb(216, 9, 9);
+.app_dark_theme {
+  --bg-color: rgb(18, 18, 38); // Тёмно-синий фон
+  --inverted-bg-color: rgb(240, 240, 240); // Светлый фон для инвертированных элементов
 
-  --primary-color: rgb(1, 77, 1);
-  --secondary-color: rgb(5, 180, 5);
-  --inverted-primary-color: rgb(8, 18, 63);
-  --inverted-secondary-color: rgb(4, 42, 207);
+  --primary-color: rgb(255, 59, 48); // Ярко-красный (акценты)
+  --secondary-color: rgb(48, 209, 88); // Ярко-зелёный (доп. акценты)
+  --inverted-primary-color: rgb(10, 132, 255); // Голубой (для светлых элементов)
+  --inverted-secondary-color: rgb(191, 90, 242);
 }

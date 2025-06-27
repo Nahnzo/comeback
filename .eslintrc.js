@@ -1,3 +1,5 @@
+const { off } = require('process')
+
 module.exports = {
   env: {
     browser: true,
@@ -13,10 +15,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'react-hooks'],
   rules: {
     'react/jsx-indent': 'off',
-    'react/jsx-indent-props': [2, 4],
+    'react/jsx-indent-props': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
     indent: 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
@@ -35,6 +39,7 @@ module.exports = {
     'no-undef': 1,
     semi: 'off',
     'arrow-body-style': 'off',
+    'jsx-a11y/no-static-element-interactions': off,
   },
   globals: {
     __IS_DEV__: true,
